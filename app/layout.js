@@ -1,3 +1,4 @@
+import HomeHeader from './components/HomeHeader/HomeHeader';
 import './globals.css'
 import { Roboto } from 'next/font/google'
 
@@ -16,7 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+
+      <body className={roboto.className}>
+        
+        <HomeHeader />
+        {children}
+        
+      </body>
     </html>
   )
 }
