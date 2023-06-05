@@ -1,5 +1,11 @@
 import getAllPosts from "@/libs/getAllPosts";
 
+export const metadata = {
+  title:"Home",
+  description:"This is users HomePage"
+}
+
+
 export default async function Home() {
   const posts = await getAllPosts();
   return (
